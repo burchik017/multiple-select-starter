@@ -49,10 +49,14 @@
 
 .top_container form {
     width: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     position: relative;
     margin: 17px 0 0;
+}
+
+.top_container.show form {
+    display: flex;
 }
 
 .top_container form input {
