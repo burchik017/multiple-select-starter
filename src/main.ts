@@ -5,9 +5,7 @@ import './style.scss';
 
 /** Customer **/
 
-const customerSelect = document.querySelector<HTMLSelectElement>(
-    'select[name="customer"]'
-);
+const customerSelect = document.querySelector<HTMLSelectElement>('select[name="customer"]');
 
 new MultipleSelect(customerSelect, {
     onChange: (selectedOptions) => {
@@ -23,18 +21,18 @@ customerSelect?.addEventListener('change', (event) => {
 
 /** Region **/
 
-const regionSelect = document.querySelector<HTMLSelectElement>(
-    'select[name="region"]'
-);
+// const regionSelect = document.querySelector<HTMLSelectElement>(
+//     'select[name="region"]'
+// );
 
-new MultipleSelect(regionSelect, {
-    onChange: (selectedOptions) => {
-        console.log('regionSelect -> selectedOptions:', selectedOptions);
-    },
-});
+// new MultipleSelect(regionSelect, {
+//     onChange: (selectedOptions) => {
+//         console.log('regionSelect -> selectedOptions:', selectedOptions);
+//     },
+// });
 
-regionSelect?.addEventListener('change', (event) => {
-    const target = event.target as HTMLSelectElement;
+// regionSelect?.addEventListener('change', (event) => {
+//     const target = event.target as HTMLSelectElement;
 
-    console.log('regionSelect -> value:', target.value);
-});
+//     console.log('regionSelect -> value:', target.value);
+// });
