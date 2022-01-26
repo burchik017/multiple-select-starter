@@ -7,6 +7,7 @@
     3. Open console, type
         "git clone https://github.com/burchik017/multiple-select-starter.git"
         cd multiple-select-starter
+        npm i
         npm run dev
     4. Open your browser and type link  http://localhost:3000/
 
