@@ -1,53 +1,58 @@
 // Component Styles
-.top_container {
+.item_container .top_container  {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
 }
-.top_container.show {
+
+.item_container.show .top_container {
     flex-wrap: wrap;
     background: #fafafa;
     padding: 17px 20px;
 }
 
-.top_container h1{
+.item_container .top_container  h1 {
     font: var(--text-bold);
 }
 
-.top_container.show h1{
+.item_container.show  .top_container h1 {
     display: none;
 }
 
-.top_container .switchBack {
+.item_container .top_container .switchBack {
     display: none;
     align-items: center;
     font: var(--text-bold);
     padding-left: 11px;
 }
 
-.top_container.show .switchBack {
+.item_container.show .top_container .switchBack {
     display: flex;
     cursor: pointer;
 }
 
-.top_container .switchBack::before {
+.item_container .top_container .switchBack::before {
     content: url(./assets/icons/arrowLeft.svg);
     position: relative;
     right: 10px;
 }
 
-.top_container .result {
+.item_container .top_container  .result {
     font: var(--text-small-bold);
     color: #035B77;
     cursor: pointer;
 }
 
-.top_container .result span {
+// .item_container .top_container .show .result {
+//     display: none;
+// }
+
+.item_container .top_container  .result span {
    padding: 0 3px;
 }
 
-.top_container form {
+.item_container .top_container  form {
     width: 100%;
     display: none;
     align-items: center;
@@ -55,11 +60,11 @@
     margin: 17px 0 0;
 }
 
-.top_container.show form {
+.item_container.show .top_container form {
     display: flex;
 }
 
-.top_container form input {
+.item_container .top_container form input {
     width: 100%;
     height: 40px;
     padding-right: 85px;
@@ -72,25 +77,49 @@
     padding: 10px 10px 14px 10px;
 }
 
-.select-wrapper {
+.item_container .select-wrapper  {
     margin-bottom: 18.85px;
 }
 
-.select-wrapper.show {
+.item_container.show  .select-wrapper {
     overflow: hidden;
     height: 371px;
     margin-bottom: 48px;
 }
 
-.select-wrapper .select-cont {
+.item_container .select-wrapper  .select-cont {
     overflow: hidden;
+    position: relative;
 }
 
-.select-wrapper.show .select-cont {
+.item_container.show  .select-wrapper .select-cont {
     height: 100%;
 }
 
-.select-wrapper .select-cont .select-head {
+.item_container .select-wrapper  .select-cont .changed-selected-option-text {
+    display: flex;
+    position: absolute;
+    width: 585px;
+    top: 1px;
+    left: 4px;
+    z-index: 99;
+    background: #fff;
+    padding: 5px 0px 5px 7px;
+    cursor: pointer;
+    height: 34px;
+}
+
+.item_container .select-wrapper  .select-cont .changed-selected-option-text span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item_container.show .select-wrapper .select-cont .changed-selected-option-text {
+    display: none;
+}
+
+.item_container .select-wrapper  .select-cont .select-head {
     height: 36px;
     width: 100%;
     overflow: hidden;
@@ -98,13 +127,22 @@
     border-left: 3px solid blue;
 }
 
-.select-wrapper.show .select-cont .select-head {
+.item_container.show  .select-wrapper.select-cont .select-head::before {
+    position: absolute;
+    top: 1px;
+    left: 16px;
+    z-index: 99;
+    background: #fff;
+    padding: 5px 0px 5px 0px;
+}
+
+.item_container.show .select-wrapper .select-cont .select-head {
     overflow-y: scroll;
-    border: inherit;
+    border: inherit !important;
     height: 100%;
 }
 
-.select-wrapper .select-cont .select-head option {
+.item_container .select-wrapper  .select-cont .select-head option {
     padding: 8px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -114,7 +152,7 @@
     position: relative;
 }
 
-.select-wrapper.show .select-cont .select-head option {
+.item_container.show .select-wrapper .select-cont .select-head option {
     font: var(--text-small-default);
     text-align: left;
     white-space: pre-wrap;
@@ -122,11 +160,11 @@
 }
 
 
-.select-wrapper .select-cont .select-head option[selected] {
+.item_container .select-wrapper  .select-cont .select-head option[selected] {
     background: linear-gradient(0deg, rgba(3, 91, 119, 0.05), rgba(3, 91, 119, 0.05)), #fff;
 } 
 
-.select-wrapper.show .select-cont .select-head option:before {
+.item_container.show .select-wrapper .select-cont .select-head option:before {
     content: url(./assets/icons/unChecked.svg);
     cursor: pointer;
     position: absolute;
@@ -134,15 +172,15 @@
     top: 8px;
 }
 
-.select-wrapper.show .select-cont .select-head option[selected]::before {
+.item_container.show  .select-wrapper .select-cont .select-head option[selected]::before {
     content: url(./assets/icons/checked.svg);
 }
 
-.select-wrapper .select-cont .select-head option[data-level="2"] {
+.item_container .select-wrapper  .select-cont .select-head option[data-level="2"] {
     padding-left: 93px;
 }
 
-/* .select-wrapper .select-cont .select-head option[data-level="2"]::before {
+/* .item_container .select-wrapper  .select-cont .select-head option[data-level="2"]::before {
     content: '';
     border-left: 1px dashed #D9D9D9;
     height: 319px;
@@ -153,23 +191,23 @@
     точки вниз
 } */
 
-.select-wrapper .select-cont .select-head option[data-level="3"] {
+.item_container .select-wrapper  .select-cont .select-head option[data-level="3"] {
     padding-left: 108px;
 }
 
-.select-wrapper .select-cont .select-head option[data-level="4"] {
+.item_container .select-wrapper  .select-cont .select-head option[data-level="4"] {
     padding-left: 123px;
 }
 
-.select-wrapper .select-cont .select-head option[data-level="5"] {
+.item_container .select-wrapper  .select-cont .select-head option[data-level="5"] {
     padding-left: 138px;
 }
 
-.select-wrapper .select-cont .select-head option[data-level="6"] {
+.item_container .select-wrapper  .select-cont .select-head option[data-level="6"] {
     padding-left: 153px;
 }
 
-.bottom_container {
+.item_container .bottom_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -181,12 +219,12 @@
     overflow: hidden;
 }
 
-.bottom_container.show {
+.item_container.show  .bottom_container {
     height: 60px;
     padding: 10px 20px;
 }
 
-.bottom_container .applyBtn {
+.item_container .bottom_container .applyBtn {
     background: #035B77;
     border-radius: 4px;
     color: #fff;
@@ -197,7 +235,7 @@
     text-transform: uppercase;
 }
 
-.bottom_container .resetBtn {
+.item_container .bottom_container .resetBtn {
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
