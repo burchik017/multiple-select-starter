@@ -1,10 +1,13 @@
 {
+  "homepage": "https://burchik017.github.io/multiple-select-starter/",
   "name": "multiple-select-starter",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "express": "^4.17.2",
