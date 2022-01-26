@@ -1,90 +1,90 @@
-// Common Styles
+// // Common Styles
 
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('./assets/fonts/SourceSansPro-Regular.woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Source Sans Pro';
+//   src: url('./assets/fonts/SourceSansPro-Regular.woff2');
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
 
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('./assets/fonts/SourceSansPro-SemiBold.woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Source Sans Pro';
+//   src: url('./assets/fonts/SourceSansPro-SemiBold.woff2');
+//   font-weight: 600;
+//   font-style: normal;
+//   font-display: swap;
+// }
 
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('./assets/fonts/SourceSansPro-Bold.woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Source Sans Pro';
+//   src: url('./assets/fonts/SourceSansPro-Bold.woff2');
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
 
-:root {
-  /* fonts */
-  --text-bold: 600 18px/12px 'Source Sans Pro', sans-serif;
-  --text-small-bold: 600 14px/18px 'Source Sans Pro', sans-serif;
-  --text-default: 400 16px/20px 'Source Sans Pro', sans-serif;
-  --text-small-default: 400 14px/18px #484545 'Source Sans Pro', sans-serif;
+// :root {
+//   /* fonts */
+//   --text-bold: 600 18px/12px 'Source Sans Pro', sans-serif;
+//   --text-small-bold: 600 14px/18px 'Source Sans Pro', sans-serif;
+//   --text-default: 400 16px/20px 'Source Sans Pro', sans-serif;
+//   --text-small-default: 400 14px/18px #484545 'Source Sans Pro', sans-serif;
 
-  --black-bg: #fff;
-  --grey-bg: #fafafa;
-}
+//   --black-bg: #fff;
+//   --grey-bg: #fafafa;
+// }
 
-* {
-  padding: 0;
-  margin: 0;
-  /* color: var(--black-700); */
-  box-sizing: border-box;
-  outline: none;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  outline: 0;
-  will-change: font;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
-}
+// * {
+//   padding: 0;
+//   margin: 0;
+//   /* color: var(--black-700); */
+//   box-sizing: border-box;
+//   outline: none;
+//   font-family: 'Source Sans Pro', sans-serif;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 24px;
+//   outline: 0;
+//   will-change: font;
+//   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+//   -webkit-tap-highlight-color: transparent;
+// }
 
-img {
-  display: block;
-}
+// img {
+//   display: block;
+// }
 
-input[type="button"] {
-  cursor: pointer;
-  white-space: nowrap;
-  -webkit-appearance: none;
-  border: none;
-  outline: none;
-  background: none;
-}
+// input[type="button"] {
+//   cursor: pointer;
+//   white-space: nowrap;
+//   -webkit-appearance: none;
+//   border: none;
+//   outline: none;
+//   background: none;
+// }
 
-select {
-  outline: none;
-}
+// select {
+//   outline: none;
+// }
 
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  scroll-behavior: smooth;
-}
+// html {
+//   -webkit-text-size-adjust: 100%;
+//   -ms-text-size-adjust: 100%;
+//   scroll-behavior: smooth;
+// }
 
-body {
-  min-height: calc(100vh - 182px);
-  background: var(--black-bg);
-}
+// body {
+//   min-height: calc(100vh - 182px);
+//   background: var(--black-bg);
+// }
 
-.wrapper {
-  width: 100%;
-  max-width: 636px;
-  display: flex;
-  flex-direction: column;
-  margin: 182px auto 0;
-  padding: 0 23px 0 22px;
-  grid-gap: 200px;
-}
+// .wrapper {
+//   width: 100%;
+//   max-width: 636px;
+//   display: flex;
+//   flex-direction: column;
+//   margin: 182px auto 0;
+//   padding: 0 23px 0 22px;
+//   grid-gap: 200px;
+// }
