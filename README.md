@@ -13,8 +13,4 @@
 
 ## DEMO
 
-https://burchik017.github.io/multiple-select-starter/
-
-or
-
-https://sore-weight.surge.sh
+https://ruddy-drum.surge.sh
