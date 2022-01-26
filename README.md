@@ -16,4 +16,4 @@ https://burchik017.github.io/multiple-select-starter/
 
 or
 
-sore-weight.surge.sh
+https://sore-weight.surge.sh
